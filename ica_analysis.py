@@ -35,7 +35,7 @@ y_coor = []
 ###### Load image #######
 #########################
 def image_load(image_path):
-    # load the image, write the path where the image is saved (if there is no image uncomments these two lines)
+    # load the image, write the path where the image is saved (if there is no image uncomment these two lines)
     global img
     img = cv2.imread(image_path, 1)  # for electrode location selection
     image = mpimg.imread(image_path)  # for heatmap
