@@ -16,7 +16,7 @@ To use ica_analysis you need to convert your data to a numpy array, and import t
 from ica_analysis import ica
 ```
 
-### Parameter Documentaion
+### Parameter Documentation
 `ica_analysis.ica(sigbufs, sampling_rate, heatmap_bool=False, image_path=None, hscroll_bool=False, annotations_bool=False, set_annotations=None,  set_times=None)
 `
 - **sigbufs** *(numpy array)*: signal data such that each row contains the data from a specific channel
