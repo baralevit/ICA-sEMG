@@ -16,7 +16,9 @@ To use ica_analysis you need to convert your data to a numpy array, and import t
 from ica_analysis import ica
 ```
 
-`ica` parameters: 
+### Parameter Documentaion
+`ica_analysis.ica(sigbufs, sampling_rate, heatmap_bool=False, image_path=None, hscroll_bool=False, annotations_bool=False, set_annotations=None,  set_times=None)
+`
 - **sigbufs** *(numpy array)*: signal data such that each row contains the data from a specific channel
 - **sampling_rate** *(int)*: number of samples per second
 - **heatmap_bool** *(bool, optional)*: boolean variable indicating whether you'd like to have the heatmap displayed (default is False)
@@ -26,8 +28,8 @@ from ica_analysis import ica
 - **set_annotations** *(numpy array, optional)*: annotation array (default is None)
 - **set_times** *(numpy array, optional)*: annotation times array (default is None)
 
-
-Additionally the repo contains scripts to process signal data in two formats: 
+### sEMG Data Processing
+Additionally the repo contains scripts to process sEMG data in two formats: 
 - EDF: has the option to split the file to multiple, smaller files. The number of files is determined by "num_sets". Additionally user must fill out the path where the edf is stored ("edf_path")
 - CSV: user must fill out the path of the CSV file 
 
