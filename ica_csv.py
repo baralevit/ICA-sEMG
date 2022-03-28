@@ -71,15 +71,12 @@ sigbufs = df.to_numpy().T
 # run ICA to display time plot, spectral analysis, and heatmap (optional)
 
 # if heatmap_bool==True and annotations_bool==True
-
 if (heatmap_bool == True and annotations_bool == True):
-
     ica(sigbufs, sampling_rate, heatmap_bool, image_path, hscroll_bool, annotations_bool, set_annotations,
         set_times)
 
 
 # if heatmap_bool==False and annotations_bool==True
-
 elif (heatmap_bool == False and annotations_bool == True):
 
     ica(sigbufs, sampling_rate, heatmap_bool, hscroll_bool=hscroll_bool, annotations_bool=annotations_bool,
@@ -90,9 +87,9 @@ elif (heatmap_bool == False and annotations_bool == True):
 # if heatmap_bool==True and annotations_bool==False
 elif (heatmap_bool == True and annotations_bool == False):
     ica(sigbufs, sampling_rate, heatmap_bool, image_path, hscroll_bool, annotations_bool)
+    
 
 # if heatmap_bool==False and annotations_bool==False
-
 elif (heatmap_bool == False and annotations_bool == False):
 
     ica(sigbufs, sampling_rate, heatmap_bool, hscroll_bool=hscroll_bool, annotations_bool=annotations_bool)
