@@ -27,7 +27,7 @@ from ica_analysis import ica
 - **set_times** *(numpy array, optional)*: annotation times array (default is None)
 
 
-Additionally the repo contains main scripts to process signal data in two formats: 
+Additionally the repo contains scripts to process signal data in two formats: 
 - EDF: has the option to split the file to multiple, smaller files. The number of files is determined by "num_sets". Additionally user must fill out the path where the edf is stored ("edf_path")
 - CSV: user must fill out the path of the CSV file 
 
