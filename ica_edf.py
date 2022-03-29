@@ -16,9 +16,6 @@ import matplotlib.pyplot as plt
 #edf file path
 edf_path=r"C:/Users/User/EDFfile.edf"
 
-#sampling rate for the EMG signals
-sampling_rate = 250  # needed for the time plot and spectral analysis
-
 #number of sets to split the data into
 num_sets=1
 
@@ -42,6 +39,9 @@ end_annotations = 'Ended by DAU'
 ############################
 
 f = pyedflib.EdfReader(edf_path)
+
+#sampling rate of the EMG signals
+sampling_rate = int(f.getSampleFrequency(0))
 
 ########################################
 ###### Split the file (if needed) ######
